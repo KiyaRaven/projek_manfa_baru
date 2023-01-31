@@ -34,7 +34,7 @@ class _IbadahState extends State<Ibadah> {
             Row(
               children: const [
                 Icon(
-                  Icons.subdirectory_arrow_left_rounded,
+                  Icons.keyboard_arrow_left,
                   color: Colors.black,
                 ),
                 SizedBox(
@@ -176,7 +176,7 @@ class _IbadahState extends State<Ibadah> {
                                           style: TextStyle(
                                               color: hijauColor,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.w500),
+                                              fontWeight: FontWeight.w600),
                                           textAlign: TextAlign.center,
                                         ),
 
@@ -456,7 +456,7 @@ class _AnnisaState extends State<Annisa> {
                       style: TextStyle(
                           color: kuningColor,
                           fontSize: 12,
-                          fontWeight: FontWeight.w500),
+                          fontWeight: FontWeight.w700),
                       textAlign: TextAlign.center,
                     ),
                     Icon(
