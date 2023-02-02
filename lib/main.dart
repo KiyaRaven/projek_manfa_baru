@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:manfa/ibadah/ibadah.dart';
+import 'package:manfa/views/pages/ibadah/ibadah.dart';
 import 'package:manfa/splashScreen/splash.dart';
 
 void main() {

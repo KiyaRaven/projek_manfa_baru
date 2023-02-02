@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/ZISWAF/ziswaf.dart';
-import 'package:manfa/ibadah/artikelmuslim/artikelmuslim.dart';
-import 'package:manfa/ibadah/artikelmuslimibadah/artikel_muslim_ibadah.dart';
-import 'package:manfa/ibadah/doa/doa.dart';
-import 'package:manfa/ibadah/dzikir/dzikir.dart';
-import 'package:manfa/ibadah/jadwal/jadwal_shalat.dart';
-import 'package:manfa/ibadah/kalkulatorzakat/kalkulatorzakat.dart';
-import 'package:manfa/ibadah/kiblat/arah_kiblat.dart';
-import 'package:manfa/ibadah/quranDigital/quranDigital.dart';
+import 'package:manfa/views/pages/ibadah/ZISWAF/ziswaf.dart';
+import 'package:manfa/views/pages/ibadah/artikelmuslim/artikelmuslim.dart';
+import 'package:manfa/views/pages/ibadah/artikelmuslimibadah/artikel_muslim_ibadah.dart';
+import 'package:manfa/views/pages/ibadah/doa/doa.dart';
+import 'package:manfa/views/pages/ibadah/dzikir/dzikir.dart';
+import 'package:manfa/views/pages/ibadah/jadwal/jadwal_shalat.dart';
+import 'package:manfa/views/pages/ibadah/kalkulatorzakat/kalkulatorzakat.dart';
+import 'package:manfa/views/pages/ibadah/kiblat/arah_kiblat.dart';
+import 'package:manfa/views/pages/ibadah/quranDigital/quranDigital.dart';
 
 class Ibadah extends StatefulWidget {
   const Ibadah({super.key});

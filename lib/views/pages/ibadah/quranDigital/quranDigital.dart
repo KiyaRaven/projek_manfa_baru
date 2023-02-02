@@ -1,13 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:manfa/ibadah/doa/tabs/quran.dart';
-import 'package:manfa/ibadah/doa/tabs/hadist.dart';
-import 'package:manfa/contants/color_style.dart';
+// ignore_for_file: file_names
 
-class Doa extends StatefulWidget {
-  const Doa({super.key});
+import 'package:flutter/material.dart';
+import 'package:manfa/contants/color_style.dart';
+import 'package:manfa/views/pages/ibadah/QuranDigital/tabs/surah.dart';
+import 'package:manfa/views/pages/ibadah/QuranDigital/tabs/juz.dart';
+
+class QuranDigital extends StatefulWidget {
+const QuranDigital({super.key});
 
   @override
-  State<Doa> createState() => _DoaState();
+State<QuranDigital> createState() => _QuranDigitalState();
 }
 
 final List<Tab> myTabs = List.generate(
@@ -15,7 +17,8 @@ final List<Tab> myTabs = List.generate(
   (index) => Tab(text: 'TAB $index'),
 );
 
-class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
+class _QuranDigitalState extends State<QuranDigital>
+    with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   // ignore: prefer_typing_uninitialized_variables
@@ -59,7 +62,7 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
                 Container(
                   margin: const EdgeInsets.only(left: 11),
                   child: const Text(
-                    'Doa-doa',
+                    'Quran Digital',
                     style: TextStyle(
                         fontStyle: FontStyle.normal,
                         // color: black1Color,
@@ -86,6 +89,7 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
             )
           ],
         ),
+
       ),
       body: ListView(
         children: [
@@ -103,7 +107,8 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
   Container _tabsWidget() {
     // ignore: sized_box_for_whitespace
     return Container(
-      padding: const EdgeInsets.symmetric(
+      padding:
+       const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 10,
       ),
@@ -122,7 +127,7 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
                     borderRadius: BorderRadius.circular(64),
                     border: Border.all(
                       color:
-                          const Color.fromARGB(255, 218, 216, 216), //color of border
+                     abuputihColor, //color of border
                       width: 1, //width of border
                     ),
                   ),
@@ -139,13 +144,13 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
                     tabs: const [
                       Tab(
                         child: Text(
-                          "Quran",
+                          "Surah",
                           style: TextStyle(fontWeight: FontWeight.w800),
                         ),
                       ),
                       Tab(
                         child: Text(
-                          "Hadist",
+                          "Juz",
                           style: TextStyle(fontWeight: FontWeight.w800),
                         ),
                       ),
@@ -159,8 +164,8 @@ class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
             child: TabBarView(
               controller: tabController,
               children: [
-                Quran(),
-                Hadist(),
+                Surah(),
+                Juz(),
               ],
             ),
           ),

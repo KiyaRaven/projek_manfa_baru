@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/artikelmuslim/tabs/artikelmuslim2.dart';
+import 'package:manfa/views/pages/ibadah/artikelmuslim/tabs/artikelmuslim2.dart';
 
-import '../../widgets/carousel_slider_artikelmuslim.dart';
+import '../../../../widgets/carousel_slider_artikelmuslim.dart';
+
+
 
 class ArtikelMuslim extends StatefulWidget {
   const ArtikelMuslim({super.key});

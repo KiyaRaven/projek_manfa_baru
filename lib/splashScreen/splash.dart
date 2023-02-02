@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/ibadah.dart';
+import 'package:manfa/views/pages/ibadah/ibadah.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

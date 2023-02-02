@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import "package:percent_indicator/percent_indicator.dart";
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/ZISWAF/carouselSlider/carousel_slider_ziswaf.dart';
+import 'package:manfa/views/pages/ibadah/ZISWAF/carouselSlider/carousel_slider_ziswaf.dart';
 
 class ZISWAF extends StatefulWidget {
   const ZISWAF({super.key});

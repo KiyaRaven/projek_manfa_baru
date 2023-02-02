@@ -1,15 +1,13 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
+import 'package:manfa/views/pages/ibadah/doa/tabs/quran.dart';
+import 'package:manfa/views/pages/ibadah/doa/tabs/hadist.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/QuranDigital/tabs/surah.dart';
-import 'package:manfa/ibadah/QuranDigital/tabs/juz.dart';
 
-class QuranDigital extends StatefulWidget {
-const QuranDigital({super.key});
+class Doa extends StatefulWidget {
+  const Doa({super.key});
 
   @override
-State<QuranDigital> createState() => _QuranDigitalState();
+  State<Doa> createState() => _DoaState();
 }
 
 final List<Tab> myTabs = List.generate(
@@ -17,8 +15,7 @@ final List<Tab> myTabs = List.generate(
   (index) => Tab(text: 'TAB $index'),
 );
 
-class _QuranDigitalState extends State<QuranDigital>
-    with SingleTickerProviderStateMixin {
+class _DoaState extends State<Doa> with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   // ignore: prefer_typing_uninitialized_variables
@@ -62,7 +59,7 @@ class _QuranDigitalState extends State<QuranDigital>
                 Container(
                   margin: const EdgeInsets.only(left: 11),
                   child: const Text(
-                    'Quran Digital',
+                    'Doa-doa',
                     style: TextStyle(
                         fontStyle: FontStyle.normal,
                         // color: black1Color,
@@ -89,7 +86,6 @@ class _QuranDigitalState extends State<QuranDigital>
             )
           ],
         ),
-
       ),
       body: ListView(
         children: [
@@ -107,8 +103,7 @@ class _QuranDigitalState extends State<QuranDigital>
   Container _tabsWidget() {
     // ignore: sized_box_for_whitespace
     return Container(
-      padding:
-       const EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 10,
       ),
@@ -127,7 +122,7 @@ class _QuranDigitalState extends State<QuranDigital>
                     borderRadius: BorderRadius.circular(64),
                     border: Border.all(
                       color:
-                     abuputihColor, //color of border
+                          const Color.fromARGB(255, 218, 216, 216), //color of border
                       width: 1, //width of border
                     ),
                   ),
@@ -144,13 +139,13 @@ class _QuranDigitalState extends State<QuranDigital>
                     tabs: const [
                       Tab(
                         child: Text(
-                          "Surah",
+                          "Quran",
                           style: TextStyle(fontWeight: FontWeight.w800),
                         ),
                       ),
                       Tab(
                         child: Text(
-                          "Juz",
+                          "Hadist",
                           style: TextStyle(fontWeight: FontWeight.w800),
                         ),
                       ),
@@ -164,8 +159,8 @@ class _QuranDigitalState extends State<QuranDigital>
             child: TabBarView(
               controller: tabController,
               children: [
-                Surah(),
-                Juz(),
+                Quran(),
+                Hadist(),
               ],
             ),
           ),

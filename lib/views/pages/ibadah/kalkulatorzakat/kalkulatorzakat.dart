@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
 
-import '../../widgets/custom_carousel_slider.dart';
+import '../../../../widgets/custom_carousel_slider.dart';
+
 
 class KalkulatorZakat extends StatefulWidget {
   const KalkulatorZakat({super.key});

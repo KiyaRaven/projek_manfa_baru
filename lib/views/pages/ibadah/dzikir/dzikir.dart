@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/dzikir/tabs/pagi.dart';
-import 'package:manfa/ibadah/dzikir/tabs/petang.dart';
-import 'package:manfa/ibadah/dzikir/tabs/umum.dart';
+import 'package:manfa/views/pages/ibadah/dzikir/tabs/pagi.dart';
+import 'package:manfa/views/pages/ibadah/dzikir/tabs/petang.dart';
+import 'package:manfa/views/pages/ibadah/dzikir/tabs/umum.dart';
 
 class Dzikirpage extends StatefulWidget {
   const Dzikirpage({super.key});

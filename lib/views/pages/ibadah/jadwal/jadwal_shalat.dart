@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:manfa/ibadah/ibadah.dart';
+import 'package:manfa/views/pages/ibadah/ibadah.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/ibadah/jadwal/tabs/tab_wit.dart';
-import 'package:manfa/ibadah/jadwal/tabs/tab_wita.dart';
-import 'package:manfa/ibadah/jadwal/tabs/tab_wib.dart';
+import 'package:manfa/views/pages/ibadah/jadwal/tabs/tab_wit.dart';
+import 'package:manfa/views/pages/ibadah/jadwal/tabs/tab_wita.dart';
+import 'package:manfa/views/pages/ibadah/jadwal/tabs/tab_wib.dart';
 
 class jadwalShalat extends StatefulWidget {
   IconData? icon;
