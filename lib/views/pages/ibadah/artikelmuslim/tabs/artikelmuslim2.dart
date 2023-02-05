@@ -1,14 +1,70 @@
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
+import 'dart:math';
 
-class ArtikelMuslim2 extends StatefulWidget {
-  const ArtikelMuslim2({super.key});
+class ArtikelMuslim2 extends StatelessWidget {
+  ArtikelMuslim2({super.key});
+  final List<Container> myList = List.generate(90, (index) {
+    return Container(
+      width: 173,
+      height: 250,
+      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+      decoration: BoxDecoration(
+          border: Border.all(color: abuputihColor),
+          borderRadius: BorderRadius.circular(10)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 150,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(12),
+                  image: const DecorationImage(
+                      image: AssetImage(
+                        'images/masjid.png',
+                      ),
+                      fit: BoxFit.fill),
+                ),
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Keutamaan Membaca Dzikir Pagi & Petang",
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      Text(
+                        "15 Maret 2022",
+                        style: TextStyle(
+                            fontSize: 11, fontWeight: FontWeight.w400),
+                      ),
+                      Text(
+                        "09:00",
+                        style: TextStyle(
+                            fontSize: 11, fontWeight: FontWeight.w400),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  });
 
-  @override
-  State<ArtikelMuslim2> createState() => _ArtikelMuslim2State();
-}
-
-class _ArtikelMuslim2State extends State<ArtikelMuslim2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -170,6 +226,15 @@ class _ArtikelMuslim2State extends State<ArtikelMuslim2> {
                     ],
                   ),
                 ),
+                // GridView(
+                //   padding: EdgeInsets.all(20),
+                //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //       crossAxisCount: 2,
+                //       crossAxisSpacing: 10,
+                //       mainAxisSpacing: 10,
+                //       childAspectRatio: 4 / 3),
+                //   children: myList,
+                // ),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 10),

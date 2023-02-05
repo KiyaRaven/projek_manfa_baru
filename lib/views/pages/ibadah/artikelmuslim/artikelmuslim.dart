@@ -635,7 +635,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return const ArtikelMuslim2();
+                              return  ArtikelMuslim2();
                             },
                           ),
                         );
