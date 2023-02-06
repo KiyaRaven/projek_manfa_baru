@@ -197,7 +197,7 @@ class _ZISWAFState extends State<ZISWAF> {
                               image: AssetImage(
                                 'images/gambar1.png',
                               ),
-                              fit: BoxFit.fill),
+                              fit: BoxFit.cover),
                         ),
                       ),
                       const SizedBox(
@@ -316,7 +316,7 @@ class _ZISWAFState extends State<ZISWAF> {
                               image: AssetImage(
                                 'images/gambar1.png',
                               ),
-                              fit: BoxFit.fill),
+                              fit: BoxFit.cover),
                         ),
                       ),
                       const SizedBox(

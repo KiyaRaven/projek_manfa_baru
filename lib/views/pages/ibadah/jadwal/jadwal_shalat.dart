@@ -128,7 +128,7 @@ class _jadwalShalatState extends State<jadwalShalat>
                           "Kota Depok, Jawa Barat",
                           style: TextStyle(
                               color: Colors.white,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w500,
                               fontSize: 14),
                         ),
                       ],
@@ -146,7 +146,7 @@ class _jadwalShalatState extends State<jadwalShalat>
                           "11.45 ",
                           style: TextStyle(
                               color: Colors.white,
-                              fontWeight: FontWeight.w900,
+                              fontWeight: FontWeight.w800,
                               fontSize: 45),
                         ),
                         Text(
@@ -171,7 +171,7 @@ class _jadwalShalatState extends State<jadwalShalat>
                           "Menuju Maghrib 00 : 49 : 40",
                           style: TextStyle(
                               color: Colors.white,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w500,
                               fontSize: 15),
                         ),
                       ],
@@ -264,3 +264,5 @@ class _jadwalShalatState extends State<jadwalShalat>
     );
   }
 }
+
+

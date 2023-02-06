@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
-import 'package:manfa/views/pages/ibadah/QuranDigital/tabs/surah.dart';
-import 'package:manfa/views/pages/ibadah/QuranDigital/tabs/juz.dart';
+import 'package:manfa/views/pages/ibadah/quranDigital/tabs/juz.dart';
+import 'package:manfa/views/pages/ibadah/quranDigital/tabs/surah.dart';
 
 class QuranDigital extends StatefulWidget {
-const QuranDigital({super.key});
+  const QuranDigital({super.key});
 
   @override
-State<QuranDigital> createState() => _QuranDigitalState();
+  State<QuranDigital> createState() => _QuranDigitalState();
 }
 
 final List<Tab> myTabs = List.generate(
@@ -51,7 +51,7 @@ class _QuranDigitalState extends State<QuranDigital>
             Row(
               children: [
                 IconButton(
-                  icon:  Icon(
+                  icon: Icon(
                     Icons.arrow_back,
                     color: kuningColor,
                   ),
@@ -89,7 +89,6 @@ class _QuranDigitalState extends State<QuranDigital>
             )
           ],
         ),
-
       ),
       body: ListView(
         children: [
@@ -107,8 +106,7 @@ class _QuranDigitalState extends State<QuranDigital>
   Container _tabsWidget() {
     // ignore: sized_box_for_whitespace
     return Container(
-      padding:
-       const EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 10,
       ),
@@ -126,8 +124,7 @@ class _QuranDigitalState extends State<QuranDigital>
                     // color: Color.fromARGB(255, 173, 169, 169),
                     borderRadius: BorderRadius.circular(64),
                     border: Border.all(
-                      color:
-                     abuputihColor, //color of border
+                      color: abuputihColor, //color of border
                       width: 1, //width of border
                     ),
                   ),

@@ -104,8 +104,7 @@ class _IbadahState extends State<Ibadah> {
                       Container(
                         height: 100,
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 15,
-                        ),
+                            horizontal: 15, vertical: 5),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: hijauColor,
@@ -256,14 +255,18 @@ class _IbadahState extends State<Ibadah> {
                               );
                             }),
                             // ignore: prefer_const_constructors, sort_child_properties_last
-                            child: Text(
-                              "Lihat Semua",
-                              style: const TextStyle(
-                                  color: Colors.amber,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 12),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(vertical: 15),
+                              child: Text(
+                                "Lihat Semua",
+                                style: const TextStyle(
+                                    color: Colors.amber,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 12),
+                              ),
                             ),
                             style: ElevatedButton.styleFrom(
+                              elevation: 0,
                               foregroundColor: Colors.amber,
                               backgroundColor:
                                   const Color.fromARGB(255, 255, 245, 214),
@@ -408,9 +411,7 @@ class _AnnisaState extends State<Annisa> {
   Widget build(BuildContext context) {
     return Container(
       height: 96,
-      padding: const EdgeInsets.symmetric(
-        horizontal: 15,
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: kuningColor,
