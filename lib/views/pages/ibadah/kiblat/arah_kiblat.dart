@@ -48,7 +48,7 @@ class Kiblat extends StatelessWidget {
               icon: const CircleAvatar(
                 backgroundImage: NetworkImage(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13Ljxcq59M44F_Sk2Re0cHrSrrU81o1WEuA&usqp=CAU"),
-                backgroundColor: Colors.blue,
+                backgroundColor: Colors.grey,
               ),
               onPressed: () {},
             ),

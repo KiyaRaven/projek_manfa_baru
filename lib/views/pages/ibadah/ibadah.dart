@@ -59,7 +59,7 @@ class _IbadahState extends State<Ibadah> {
             icon: const CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13Ljxcq59M44F_Sk2Re0cHrSrrU81o1WEuA&usqp=CAU"),
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.grey,
             ),
           ),
         ],
@@ -106,6 +106,9 @@ class _IbadahState extends State<Ibadah> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 15, vertical: 5),
                         decoration: BoxDecoration(
+                          image: const DecorationImage(
+                              image: AssetImage("images/container1.png"),
+                              fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15),
                           color: hijauColor,
                         ),
@@ -149,7 +152,8 @@ class _IbadahState extends State<Ibadah> {
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 30),
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 33),
                                 ),
                                 GestureDetector(
                                   onTap: () {
@@ -256,10 +260,10 @@ class _IbadahState extends State<Ibadah> {
                             }),
                             // ignore: prefer_const_constructors, sort_child_properties_last
                             child: Padding(
-                              padding: EdgeInsets.symmetric(vertical: 15),
-                              child: Text(
+                              padding: const EdgeInsets.symmetric(vertical: 15),
+                              child: const Text(
                                 "Lihat Semua",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     color: Colors.amber,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 12),
@@ -415,6 +419,8 @@ class _AnnisaState extends State<Annisa> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: kuningColor,
+        image: const DecorationImage(
+            image: AssetImage("images/annisa.png"), fit: BoxFit.contain),
       ),
       child: Column(
         // crossAxisAlignment: CrossAxisAlignment.start,
@@ -661,7 +667,7 @@ class _ImgLoremState extends State<ImgLorem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400,
+      // width: MediaQuery.of(context).size.height * 1.0,
       height: 109,
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
@@ -671,44 +677,41 @@ class _ImgLoremState extends State<ImgLorem> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
-                height: 88,
-                width: 88,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(12),
-                  image: const DecorationImage(
-                      image: AssetImage(
-                        'images/masjid.png',
-                      ),
-                      fit: BoxFit.fill),
+          Container(
+            height: 88,
+            width: 88,
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(12),
+              image: const DecorationImage(
+                  image: AssetImage(
+                    'images/masjid.png',
+                  ),
+                  fit: BoxFit.fill),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Container(
+                  height: 40,
+                  child: Text(
+                    "Keutamaan Membaca Dzikir\nPagi & Petang",
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: const [
-                    Text(
-                      "Keutamaan Membaca Dzikir\nPagi & Petang",
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "09.00, 28 Sep 2022",
-                      style: TextStyle(fontSize: 10),
-                    ),
-                  ],
+                const SizedBox(
+                  height: 20,
                 ),
-              ),
-            ],
+                const Text(
+                  "09.00, 28 Sep 2022",
+                  style: TextStyle(fontSize: 10),
+                ),
+              ],
+            ),
           ),
         ],
       ),

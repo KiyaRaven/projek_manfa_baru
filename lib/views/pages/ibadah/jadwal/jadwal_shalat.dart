@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:manfa/views/pages/ibadah/ibadah.dart';
 import 'package:manfa/contants/color_style.dart';
 import 'package:manfa/views/pages/ibadah/jadwal/tabs/tab_wit.dart';
 import 'package:manfa/views/pages/ibadah/jadwal/tabs/tab_wita.dart';
@@ -19,6 +18,7 @@ final List<Tab> myTabs = List.generate(
   (index) => Tab(text: 'TAB $index'),
 );
 
+// ignore: camel_case_types
 class _jadwalShalatState extends State<jadwalShalat>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
@@ -82,7 +82,7 @@ class _jadwalShalatState extends State<jadwalShalat>
               icon: const CircleAvatar(
                 backgroundImage: NetworkImage(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13Ljxcq59M44F_Sk2Re0cHrSrrU81o1WEuA&usqp=CAU"),
-                backgroundColor: Colors.blue,
+                backgroundColor: Colors.grey,
               ),
               onPressed: () {},
             ),
@@ -264,5 +264,3 @@ class _jadwalShalatState extends State<jadwalShalat>
     );
   }
 }
-
-

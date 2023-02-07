@@ -102,8 +102,8 @@ class _ArtikelMuslimIbadahState extends State<ArtikelMuslimIbadah> {
                       "15 Maret 2022, 09:00",
                       style: TextStyle(
                           fontSize: 23,
-                          fontWeight: FontWeight.w200,
-                          color: abuputihColor),
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey),
                     ),
                     const SizedBox(
                       height: 25,

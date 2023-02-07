@@ -4,8 +4,6 @@ import 'package:manfa/views/pages/ibadah/artikelmuslim/tabs/artikelmuslim2.dart'
 
 import '../../../../widgets/carousel_slider_artikelmuslim.dart';
 
-
-
 class ArtikelMuslim extends StatefulWidget {
   const ArtikelMuslim({super.key});
 
@@ -178,7 +176,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -252,7 +250,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -326,7 +324,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -400,7 +398,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -474,7 +472,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -548,7 +546,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
               height: 20,
             ),
             Container(
-              width: 400,
+              // width: 400,
               height: 109,
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
@@ -635,7 +633,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return  ArtikelMuslim2();
+                              return ArtikelMuslim2();
                             },
                           ),
                         );
@@ -645,7 +643,7 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
-                        elevation: 15.0,
+                        elevation: 0,
                       ),
                       child: const Padding(
                         padding: EdgeInsets.all(5.0),
