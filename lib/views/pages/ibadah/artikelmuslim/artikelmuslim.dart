@@ -175,445 +175,469 @@ class _ArtikelMuslimState extends State<ArtikelMuslim> {
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Container(
-              // width: 400,
-              height: 109,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: abuputihColor),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 88,
-                        width: 88,
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                          image: const DecorationImage(
-                              image: AssetImage(
-                                'images/masjid.png',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Container(
+                // width: 400,
+                height: 109,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(color: abuputihColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 88,
+                          width: 88,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'images/masjid.png',
+                                ),
+                                fit: BoxFit.fill),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Keutamaan Membaca Dzikir\nPagi & Petang",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.w800),
                               ),
-                              fit: BoxFit.fill),
+                              Text(
+                                "Sumber : rumaysho.com",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "15 Maret 2022, 09 : 00 WIB",
+                                style: TextStyle(
+                                    fontSize: 11, fontWeight: FontWeight.w400),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              "Keutamaan Membaca Dzikir\nPagi & Petang",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w800),
-                            ),
-                            Text(
-                              "Sumber : rumaysho.com",
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "15 Maret 2022, 09 : 00 WIB",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.w400),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      top: 50,
-                      left: 10,
+                      ],
                     ),
-                    child: Icon(
-                      Icons.share,
-                      color: kuningColor,
-                      size: 30,
+                    Container(
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        left: 10,
+                      ),
+                      child: Icon(
+                        Icons.share,
+                        color: kuningColor,
+                        size: 30,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(
