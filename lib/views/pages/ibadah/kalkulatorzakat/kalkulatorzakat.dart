@@ -3,7 +3,6 @@ import 'package:manfa/contants/color_style.dart';
 
 import '../../../../widgets/custom_carousel_slider.dart';
 
-
 class KalkulatorZakat extends StatefulWidget {
   const KalkulatorZakat({super.key});
 
@@ -64,7 +63,7 @@ class _KalkulatorZakatState extends State<KalkulatorZakat> {
             child: IconButton(
               iconSize: 65,
               icon: const CircleAvatar(
-                backgroundImage:  NetworkImage(
+                backgroundImage: NetworkImage(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13Ljxcq59M44F_Sk2Re0cHrSrrU81o1WEuA&usqp=CAU"),
                 backgroundColor: Colors.grey,
               ),
@@ -203,7 +202,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/jadwalshalat.png',
                   width: 66,
                 ),
-                text: 'Jadwal Salat',
+                text: 'Zakat Mal',
               ),
               MITMenuContainer.none(
                 onTap: () {},
@@ -211,7 +210,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/arahkiblat.png',
                   width: 66,
                 ),
-                text: 'Arah Kiblat',
+                text: 'Zakat emas',
               ),
               MITMenuContainer.none(
                 onTap: () {},
@@ -219,7 +218,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/qurandigital.png',
                   width: 66,
                 ),
-                text: 'Quran Digital',
+                text: 'Zakat profesi',
               ),
               MITMenuContainer.none(
                 onTap: () {},
@@ -227,7 +226,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/doa.png',
                   width: 66,
                 ),
-                text: 'Doa - Doa',
+                text: 'Zakat perdagangan',
               ),
               MITMenuContainer.none(
                 onTap: () {},
@@ -235,7 +234,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/dzikir.png',
                   width: 66,
                 ),
-                text: 'Dzikir',
+                text: 'Zakat Tabungan',
               ),
               MITMenuContainer.none(
                 onTap: () {},
@@ -243,7 +242,7 @@ class _TabBerbagiLink2State extends State<TabBerbagiLink2> {
                   'images/kalkulatorzakat.png',
                   width: 66,
                 ),
-                text: 'Kalkulator Zakat',
+                text: 'Zakat Fitrah',
               ),
             ],
           ),

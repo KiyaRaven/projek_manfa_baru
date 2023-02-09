@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
 import 'package:manfa/views/pages/ibadah/ZISWAF/ziswaf.dart';
 import 'package:manfa/views/pages/ibadah/artikelmuslim/artikelmuslim.dart';
+import 'package:manfa/views/pages/ibadah/artikelmuslim/tabs/artikelmuslim2.dart';
 import 'package:manfa/views/pages/ibadah/artikelmuslimibadah/artikel_muslim_ibadah.dart';
 import 'package:manfa/views/pages/ibadah/doa/doa.dart';
 import 'package:manfa/views/pages/ibadah/dzikir/dzikir.dart';
@@ -253,7 +254,7 @@ class _IbadahState extends State<Ibadah> {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return const ArtikelMuslimIbadah();
+                                    return ArtikelMuslim2();
                                   },
                                 ),
                               );
@@ -666,54 +667,66 @@ class ImgLorem extends StatefulWidget {
 class _ImgLoremState extends State<ImgLorem> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      // width: MediaQuery.of(context).size.height * 1.0,
-      height: 109,
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      decoration: BoxDecoration(
-        border: Border.all(color: abuputihColor),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(
-            height: 88,
-            width: 88,
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(12),
-              image: const DecorationImage(
-                  image: AssetImage(
-                    'images/masjid.png',
-                  ),
-                  fit: BoxFit.fill),
-            ),
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) {
+              return const ArtikelMuslimIbadah();
+            },
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Container(
-                  height: 40,
-                  child: Text(
-                    "Keutamaan Membaca Dzikir\nPagi & Petang",
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                const Text(
-                  "09.00, 28 Sep 2022",
-                  style: TextStyle(fontSize: 10),
-                ),
-              ],
+        );
+      },
+      child: Container(
+        // width: MediaQuery.of(context).size.height * 1.0,
+        height: 109,
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        decoration: BoxDecoration(
+          border: Border.all(color: abuputihColor),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              height: 88,
+              width: 88,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(12),
+                image: const DecorationImage(
+                    image: AssetImage(
+                      'images/masjid.png',
+                    ),
+                    fit: BoxFit.fill),
+              ),
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: const [
+                  SizedBox(
+                    height: 40,
+                    child: Text(
+                      "Keutamaan Membaca Dzikir\nPagi & Petang",
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    "09.00, 28 Sep 2022",
+                    style: TextStyle(fontSize: 10),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
