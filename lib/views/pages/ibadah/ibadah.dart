@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:manfa/contants/color_style.dart';
 import 'package:manfa/views/pages/ibadah/ZISWAF/ziswaf.dart';
@@ -20,6 +22,34 @@ class Ibadah extends StatefulWidget {
 
 class _IbadahState extends State<Ibadah> {
   String value = "kiya";
+
+  double? indicatorValue;
+  Timer? timer;
+
+  String time() {
+    return "${DateTime.now().hour < 10 ? "0${DateTime.now().hour}" : DateTime.now().hour} : ${DateTime.now().minute < 10 ? "0${DateTime.now().minute}" : DateTime.now().minute} : ${DateTime.now().second < 10 ? "0${DateTime.now().second}" : DateTime.now().second} ";
+  }
+
+  updateSeconds() {
+    timer = Timer.periodic(
+        Duration(seconds: 1),
+        (Timer timer) => setState(() {
+              indicatorValue = DateTime.now().second / 60;
+            }));
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    indicatorValue = DateTime.now().second / 60;
+    updateSeconds();
+  }
+
+  @override
+  void dispose() {
+    timer!.cancel();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -148,13 +178,12 @@ class _IbadahState extends State<Ibadah> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const Text(
-                                  "11.45",
+                                Text(
+                                  time(),
                                   style: TextStyle(
+                                      fontSize: 30.0,
                                       color: Colors.white,
-                                      fontWeight: FontWeight.w700,
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 33),
+                                      fontWeight: FontWeight.normal),
                                 ),
                                 GestureDetector(
                                   onTap: () {
